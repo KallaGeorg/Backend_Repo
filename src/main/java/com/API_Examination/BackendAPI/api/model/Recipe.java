@@ -22,6 +22,9 @@ public Recipe(int id, String mealName, String recipe, String comment){
     this.recipe = recipe;
     this.comment = comment;
 }
+public Recipe(){
+    
+}
 
 public int getId() {
     return id; 
