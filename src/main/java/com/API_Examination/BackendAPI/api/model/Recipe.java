@@ -1,5 +1,7 @@
 package com.API_Examination.BackendAPI.api.model;
 
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,6 +14,8 @@ public class Recipe {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private int id;
+
+@Column(name = "meal_name")
 private String mealName;
 private String recipe;
 private String comment;
